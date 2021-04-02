@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/toolbar"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+       />
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/recycler"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/my_toolbar">
+
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/home1"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:icon="@drawable/home"
+                android:tag="Home"
+                android:textAlignment="viewStart"
+                />
+
+
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tech1"
+                android:tag="Technology"
+                android:icon="@drawable/tech"
+                android:textAlignment="viewStart"
+                android:text=""
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/buss1"
+                android:tag="Business"
+                android:layout_width="100dp"
+                android:text=""
+
+                android:layout_height="wrap_content"
+                android:icon="@drawable/business" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/enter1"
+                android:tag="Entertainment"
+                android:layout_width="100dp"
+                android:text=""
+
+                android:layout_height="match_parent"
+                android:icon="@drawable/entertainment" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/health1"
+                android:tag="Health"
+                android:text=""
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:icon="@drawable/health" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/science1"
+                android:tag="Science"
+                android:text=""
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:icon="@drawable/science" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/sports1"
+                android:tag="Sports"
+                android:text=""
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:icon="@drawable/sports" />
+        </com.google.android.material.tabs.TabLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab_layout"
+        tools:listitem="@layout/newlayout" />
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

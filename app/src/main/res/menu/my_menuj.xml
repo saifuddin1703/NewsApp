@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group>
+    <item android:title="Home"
+        android:icon="@drawable/home4"
+        android:id="@+id/home"
+        />
+</group>
+
+    <group>
+        <item android:title="Technology"
+
+            android:icon="@drawable/tech"
+            android:id="@+id/tech"
+            />
+        <item android:title="Business"
+            android:icon="@drawable/business"
+            android:id="@+id/buss"/>
+        <item android:title="Entertainment"
+            android:icon="@drawable/entertainment"
+            android:id="@+id/enter"
+            />
+        <item android:title="Health"
+            android:icon="@drawable/health"
+            android:id="@+id/health"/>
+        <item android:title="Science"
+            android:icon="@drawable/science"
+            android:id="@+id/science"
+            />
+        <item android:title="Sports"
+            android:icon="@drawable/sports"
+            android:id="@+id/sports"
+            />
+    </group>
+
+</menu>
